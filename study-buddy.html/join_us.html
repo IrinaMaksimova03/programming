@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Помочь проекту</title>
+    <link rel="stylesheet" href="study_buddy.css">
+</head>
+<body>
+    <nav class="site_navigation">
+        <ul>
+            <li class="navigation_item">
+                <a href="about_us.html" class="navigation_link">О проекте</a>
+            </li>
+            <li class="navigation_item">
+                <a href="study_buddy.html" class="navigation_link">Главная</a>
+            </li>
+            <li class="navigation_item">
+                <a href="choose_sb.html" class="navigation_link">Выбрать study-buddy</a>
+            </li>
+            <li class="navigation_item">
+                <a href="fill_form.html" class="navigation_link">Заполнить анкету</a>
+            </li>
+            <li class="navigation_item">
+                <a href="feedback.html" class="navigation_link">Обратная связь</a>
+            </li>
+            <li class="navigation_item">
+                <a href="join_us.html" class="active">Присоединиться к проекту</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        Присоединяйтесь к нашей дружной команде!
+    </header>
+    <label class="form_label" for="comment">Введите свои данные, чтобы стать частью нашего комьюнити:</label><br><br>
+    <form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method="get" id="UserEnter" name="UserEnter" target="_blank">
+        <p id="task" name="task_name"></p>
+        <ul>
+            <li>
+                Ваше имя:<input type="text">
+            </li>
+            <br>
+            <li>
+                Ваша фамилия:<input type="text">
+            </li>
+            <br>
+            <li>
+                Ваша электронная почта:<input type="text">
+            </li>
+            <li>
+                <input name="a" size="4" type="hidden" value="18">
+            </li>
+            <br>
+            <li>
+                <input name="b" size="4" type="hidden" value="100">
+            </li>
+            <li>Ваш возраст: <input name="x" size="4" type="text" value="30">
+            </li>
+            <br>
+            <li>
+            <input onclick="checkFields(this.form);" type="button" value="Отправить">
+        </li>
+        </ul>
+    </form>
+    <p id="result" name="task_tesult">Статус заявки:</p>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

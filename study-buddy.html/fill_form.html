@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заполнить анкету</title>
+    <link rel="stylesheet" href="study_buddy.css">
+</head>
+<body>
+    <nav class="site_navigation">
+        <ul>
+            <li class="navigation_item">
+                <a href="about_us.html" class="navigation_link">О проекте</a>
+            </li>
+            <li class="navigation_item">
+                <a href="study_buddy.html" class="navigation_link">Главная</a>
+            </li>
+            <li class="navigation_item">
+                <a href="choose_sb.html" class="navigation_link">Выбрать study-buddy</a>
+            </li>
+            <li class="navigation_item">
+                <a href="fill_form.html" class="active">Заполнить анкету</a>
+            </li>
+            <li class="navigation_item">
+                <a href="feedback.html" class="navigation_link">Обратная связь</a>
+            </li>
+            <li class="navigation_item">
+                <a href="join_us.html" class="navigation_link">Присоединиться к проекту</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        Заполни короткую анкету о себе:
+    </header>
+    <form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method="get" target="_blank">
+        <p>
+            1. Имя:
+            <input type="text">
+            </p>
+            <p>
+                2. Пол:
+                <input type="radio" name="sex" value="man">Мужской<input type="radio" name="sex" value="woman">Женский
+            </p>
+            <p> 
+                3. Дата рождения:
+                <input type="date" id="date" value="2000-01-01">
+            </p>
+            <p>
+                4. Местоположение:
+                <select name="Location">
+                    <option value="Russia">Россия</option>
+                    <option value="Kazakhstan">Казахстан</option>
+                    <option value="USA">США</option>
+                    <option value="Germany">Германия</option>
+                    <option value="France">Франция</option>
+                    <option value="Spain">Испания</option>
+                    <option value="UK">Великобритания</option>
+                    <option value="Korea">Корея</option>
+                    <option value="China">Китай</option>
+                    <option value="Japan">Япония</option>
+                    <option value="Canada">Канада</option>
+                    <option value="Brazil">Бразилия</option>
+                    <option value="Australia">Австралия</option>
+                </select>
+            </p>
+            <p>
+                5. Часовой пояс:
+                <select name="Timezone">
+    <option value="0">UTC +14</option>
+    <option value="1">UTC +13</option>
+    <option value="2">UTC +12</option>
+    <option value="3">UTC +11</option>
+    <option value="4">UTC +10</option>
+    <option value="5">UTC +9</option>
+    <option value="6">UTC +8</option>
+    <option value="7">UTC +7</option>
+    <option value="8">UTC +6</option>
+    <option value="9">UTC +5</option>
+    <option value="10">UTC +4</option>
+    <option value="11">UTC +3</option>
+    <option value="12">UTC +2</option>
+    <option value="13">UTC +1</option>
+    <option value="14">UTC +0</option>
+    <option value="15">UTC -1</option>
+    <option value="16">UTC -2</option>
+    <option value="17">UTC -3</option>
+    <option value="18">UTC -4</option>
+    <option value="19">UTC -5</option>
+    <option value="20">UTC -6</option>
+    <option value="21">UTC -7</option>
+    <option value="22">UTC -8</option>
+    <option value="23">UTC -9</option>
+    <option value="24">UTC -10</option>
+    <option value="25">UTC -11</option>
+    <option value="26">UTC -12</option>
+                </select>
+            </p>
+            <p>
+                6. Предмет для изучения:
+                <select name="study_subject">
+    <option value="0">Архитектура</option>
+    <option value="1">Aрт</option>
+    <option value="2">Биология</option>
+    <option value="3">Бизнес и менеджмент</option>
+    <option value="4">Химия</option>
+    <option value="5">Компьютерные науки</option>
+    <option value="6">Data Analysis</option>
+    <option value="7">Дизайн</option>
+    <option value="8">Экономика и финансы</option>
+    <option value="9">Педагогика</option>
+    <option value="10">Энергетика</option>
+    <option value="11">География</option>
+    <option value="12">Инженерные науки</option>
+    <option value="13">Науки об экологии</option>
+    <option value="14">Этика</option>
+    <option value="15">Питание</option>
+    <option value="16">Физическая культура</option>
+    <option value="17">История</option>
+    <option value="18">Гуманитарные науки</option>
+    <option value="19">Языки</option>
+    <option value="20">Право</option>
+    <option value="21">Литература</option>
+    <option value="22">Математические науки</option>
+    <option value="23">Медицина</option>
+    <option value="24">Музыка</option>
+    <option value="25">Философия</option>
+    <option value="26">Физика</option>
+    <option value="27">Социальные науки</option>
+                </select>
+            </p>
+            <p>
+                7. Предпочитаемый язык общения:
+                <select name="Language">
+                    <option value="1">Русский</option>
+                    <option value="2">Английский</option>
+                    <option value="3">Немецкий</option>
+                    <option value="4">Французский</option>
+                    <option value="5">Китайский</option>
+                    <option value="6">Корейский</option>
+                    <option value="7">Японский</option>
+                </select>
+            </p>
+            <p>
+                8. Интересы и увлечения: <br><br>
+                <textarea name="hobbies" type="comment">
+                </textarea>
+            </p>
+            Название файла:
+    <input name="000_file_name" size="30" type="Техт" value="Н_ОW_Г_326510_1_Ivanov.txt">
+</p>
+<p>
+    Тип записи в файл:
+    <select name="010_mode"> <option value="a">a - дозаписать в файл</option> <option value="w">w - очисить файл и записать в файл</option> </select>
+
+<input name="function" type="hidden" value="page">
+    <input name="page_id" type="hidden" value="3">
+</p>
+<p>
+    <input name="Reset" type="Reset" value="Обновить">
+    <input name="submit" type="Submit" value="Отправить">
+</p>
+</form>
+</body>
+</html>
